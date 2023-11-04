@@ -9,18 +9,12 @@ app =Flask(__name__)
 
 
 
-'''def weather():
-    key='c5eeda8ddd78b413ae75c09e1e0cca7b'
-    q= str(input('enter location in form City,country '))
-    r = requests.get(f"https://api.openweathermap.org/data/2.5/weather?q={q}&appid={key}")
-    return r.json()
-'''
 @app.route('/',methods=["POST","GET"])
 def test():
     if request.method == "POST":
            # getting input with name = fname in HTML form
         code = request.form.get("code")
-        key='c5eeda8ddd78b413ae75c09e1e0cca7b'
+        key='{ENTER YOUR KEY}'
         r = requests.get(f"https://api.openweathermap.org/data/2.5/weather?q={code}&appid={key}")
 
        # getting input with name = lname in HTML form 
