@@ -7,6 +7,7 @@ f = open('dump.txt','w')
 # from flask_googlemaps import GoogleMaps
 # from flask_googlemaps import Map, icons
 app =Flask(__name__)
+import SECRETS
 
 # GoogleMaps(app, key="my-key")
 
@@ -17,7 +18,7 @@ def test():
     if request.method == "POST":
            # getting input with name = fname in HTML form
         code = request.form.get("code")
-        key='{ENTER YOUR KEY}'
+        key= SECRETS.x
         r = requests.get(f"https://api.openweathermap.org/data/2.5/weather?q={code}&appid={key}")
 
        # getting input with name = lname in HTML form 
