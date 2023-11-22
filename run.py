@@ -1,10 +1,13 @@
 import requests
+# import simplejson
 # import flask
 from flask import Flask,request,render_template
+f = open('dump.txt','w')
 # from flask import Flask, render_template
 # from flask_googlemaps import GoogleMaps
 # from flask_googlemaps import Map, icons
 app =Flask(__name__)
+
 # GoogleMaps(app, key="my-key")
 
 
@@ -25,7 +28,16 @@ def test():
 
        # getting input with name = lname in HTML form 
         # last_name = request.form.get("lname") 
-        return r.json()
+        # s = r.json()
+        temp = r.json()['main']['temp']
+        min = r.json()['main']['temp_min']
+        max = r.json()['main']['temp_max']
+        # f.write(str(r.json()))
+        # f.flush(
+        # f.close()
+        print(r.json())
+        # return r.json()#,str(temp)
+        return render_template('dump.html',temp=temp,min=min,max=max)
     return render_template('base.html')
 
 
