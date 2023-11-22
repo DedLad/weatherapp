@@ -4,7 +4,7 @@ run ``pip install -r requirements.txt``
 
 make a file ``SECRETS.py``
 
-enter ``x = {API KEY}`` in the ``SECRETS.py`` file
+enter ``x = 'API KEY'`` in the ``SECRETS.py`` file
 
 run ``run.py``
 
