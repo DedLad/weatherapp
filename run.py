@@ -18,7 +18,7 @@ def test():
     if request.method == "POST":
            # getting input with name = fname in HTML form
         code = request.form.get("code")
-        key= SECRETS.x
+        key= SECRETS.env()
         r = requests.get(f"https://api.openweathermap.org/data/2.5/weather?q={code}&appid={key}")
 
        # getting input with name = lname in HTML form 
