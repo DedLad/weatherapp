@@ -7,6 +7,7 @@ f = open('dump.txt','w')
 # from flask_googlemaps import GoogleMaps
 # from flask_googlemaps import Map, icons
 app =Flask(__name__)
+
 import SECRETS
 
 # GoogleMaps(app, key="my-key")
