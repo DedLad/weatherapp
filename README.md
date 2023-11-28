@@ -13,3 +13,6 @@ The client endpoint is avaliable at http://127.0.0.1:5000
 
 
 **Dont forget to update your openweather api key**
+
+
+## **Refer [here](https://github.com/DedLad/git-strap) for setting up git**
