@@ -110,6 +110,13 @@ header i{
 }
 .input-part button:hover{
   background: #1d9ffc;
+  opacity: 0.8;
+}
+
+.input-part button:active{
+  background: #1d9ffc;
+  opacity: 0.7;
+  transition: opacity 0.15s;
 }
 
 .wrapper .weather-part{
@@ -194,4 +201,7 @@ header i{
 }
 .humidity i{
   font-size: 37px;
+}
+.submit-button{
+  margin-top: 50px;
 }

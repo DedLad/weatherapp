@@ -16,7 +16,6 @@ body{
     height: 100%;
     width: 100%;
     margin:auto;
-    
 }
 
 .weather__header {
@@ -50,8 +49,6 @@ input::placeholder {
     color: #fff;
 }
 
-
-
 .weather__units span {
     cursor: pointer;
 }
@@ -62,7 +59,7 @@ input::placeholder {
 
 .weather__body {
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 10px;
     margin-bottom: 250px;
 }
 
@@ -121,6 +118,14 @@ input::placeholder {
     font-size: 14px;
 }
 
+/*
+.white-container {
+    background-color: white;
+    border-radius: 20px;
+    padding:5px;
+    padding-bottom: 20px;
+}
+*/
 
 @media(max-width: 936px){
     .container {
