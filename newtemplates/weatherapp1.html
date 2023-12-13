@@ -15,6 +15,12 @@
       <section class="input-part">
         <p class="info-txt"></p>
         <div class="content">
-          <input type="text" spellcheck="false" placeholder="City/Country" required>
-          </div>
+          <form action ="{{url_for('test')}}" method="post">
+            <label for="code"></label>
+
+
+          <input type="text" spellcheck="false" placeholder="City/Country" id = 'code' name = 'code' required>
+          <button type="submit" >submit</button>          
+        </form></div>
+          </section>
       </section>
