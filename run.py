@@ -3,6 +3,8 @@ from flask import Flask,request,render_template
 import SECRETS
 import webbrowser
 # webbrowser.open('http://127.0.0.1:5000')
+import datetime
+
 
 
 app =Flask(__name__)
@@ -29,6 +31,10 @@ def test():
             city = r.json()['name']
             wind_speed = r.json()['wind']['speed']
             wind_deg = r.json()['wind']['deg']
+            datetime = datetime.datetime.now()
+            sunrise = datetime.datetime.fromtimestamp(int(r.json()['sys']['sunrise'])).strftime('%Y-%m-%d %H:%M:%S')
+            sunset = datetime.datetime.fromtimestamp(int(r.json()['sys']['sunset'])).strftime('%Y-%m-%d %H:%M:%S')
+            
 
         print(r.json())
         # return r.json()#,str(temp)
