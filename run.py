@@ -23,6 +23,13 @@ def test():
             m = d['main'].upper()
             des= d['description'].upper() 
             icon = d['icon']
+            Feels_like = s['feels_like']
+            pressure = s['pressure']
+            country = r.json()['sys']['country']
+            city = r.json()['name']
+            wind_speed = r.json()['wind']['speed']
+            wind_deg = r.json()['wind']['deg']
+
         print(r.json())
         # return r.json()#,str(temp)
         return render_template('weatherapp2.html',vars=vars)#temp=temp,min=min,max=max,hum=hum)
