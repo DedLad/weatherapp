@@ -21,13 +21,13 @@ def test():
             max = s['temp_max']
             hum = s['humidity']
             m = d['main'].upper()
-            des= d['description'].upper()
+            des= d['description'].upper() 
             icon = d['icon']
         print(r.json())
         # return r.json()#,str(temp)
-        return render_template('dump.html',vars=vars)#temp=temp,min=min,max=max,hum=hum)
+        return render_template('weatherapp2.html',vars=vars)#temp=temp,min=min,max=max,hum=hum)
     
-    return render_template('base.html')
+    return render_template('weatherapp1.html')
 
 
 if __name__ == '__main__':
