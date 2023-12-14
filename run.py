@@ -31,7 +31,7 @@ def test():
             city = r.json()['name']
             wind_speed = r.json()['wind']['speed']
             wind_deg = r.json()['wind']['deg']
-            datetime = datetime.datetime.now()
+            # datetime = datetime.datetime.now()
             sunrise = datetime.datetime.fromtimestamp(int(r.json()['sys']['sunrise'])).strftime('%Y-%m-%d %H:%M:%S')
             sunset = datetime.datetime.fromtimestamp(int(r.json()['sys']['sunset'])).strftime('%Y-%m-%d %H:%M:%S')
             

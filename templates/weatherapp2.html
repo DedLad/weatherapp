@@ -22,8 +22,8 @@
             <p class="weather__temperature">
             </p>
             <div class="weather__minmax">
-                <p>Min: 12&#176</p>
-                <p>Max: 16&#176</p>
+                <p>Min: {{vars.min}}</p>
+                <p>Max: {{vars.max}}</p>
             </div>
         </div>
         <div class="icon">
@@ -35,28 +35,28 @@
                     <i class="fa-solid fa-temperature-full"></i>
                     <div>
                         <p>Feels like</p>
-                        <p class="weather__realfeel">18&#176</p>
+                        <p class="weather__realfeel">{{vars.Feels_like}}</p>
                     </div>
                 </div>
                 <div class="weather__card">
                     <i class="fa-solid fa-droplet"></i>
                     <div>
                         <p>Humidity</p>
-                        <p class="weather__humidity">18&#176</p>
+                        <p class="weather__humidity">{{vars.hum}}</p>
                     </div>
                 </div>
                 <div class="weather__card">
                     <i class="fa-solid fa-wind"></i>
                     <div>
                         <p>Wind</p>
-                        <p class="weather__wind">18&#176</p>
+                        <p class="weather__wind">{{vars.wind_speed}}</p>
                     </div>
                 </div>
                 <div class="weather__card">
                     <i class="fa-solid fa-gauge-high"></i>
                     <div>
                         <p>Wind Angle</p>
-                        <p class="weather__pressure">18&#176</p>
+                        <p class="weather__pressure">{{vars.wind_deg}}</p>
                     </div>
                 </div>
             </div>
