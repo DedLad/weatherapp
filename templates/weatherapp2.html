@@ -20,7 +20,8 @@
                 <p>DATETIME: {{vars.datetime}}</p><!--here-->
             </div>
             <div class="weather__minmax">
-
+                <p>MIN : {{vars.min}}</p><!--here-->
+                <p>MAX : {{vars.max}}</p><!--here-->
             </div>
         </div>
         <!--there was icon here-->
@@ -29,6 +30,32 @@
         </div>
         <div class="white-container">
             <div class="weather__info">
+            <div class="weather__card">
+                <i class="fa-solid fa-temperature-full"></i>
+                <div>
+                    <p>Feels like</p>
+                    <p class="weather__realfeel">Feels_like:{{vars.Feels_like}}</p><!--here this is for feels like-->
+                </div>
+            </div>
+            <div class="weather__card">
+                <i class="fa-solid fa-droplet"></i>
+                <div>
+                    <p>Humidity</p>
+                    <p class="weather__humidity">HUM : {{vars.hum}}</p><!--here-->
+                </div>
+            </div>
+            <div class="weather__card">
+                <i class="fa-solid fa-wind"></i>
+                <div>
+                    <p>Wind</p>
+                    <p class="weather__wind">WIND: {{vars.wind}}</p><!--here-->
+                </div>
+            </div>
+            <div class="weather__card">
+                <i class="fa-solid fa-gauge-high"></i>
+                <div>
+                    <p>Pressure</p>
+                    <p class="weather__pressure">PRESSURE: {{vars.pressure}}</p><!--here-->
                 </div>
             </div>
         </div>
