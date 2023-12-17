@@ -1,6 +1,7 @@
 import requests
 from flask import Flask,request,render_template
 <<<<<<< HEAD
+<<<<<<< HEAD
 import SECRETS
 import webbrowser
 import datetime
@@ -11,6 +12,9 @@ import os
 #import webbrowser
 >>>>>>> dd372a5c7f2e84b3cff2864d7ba3c5047bd4d28f
 # webbrowser.open('http://127.0.0.1:5000')
+=======
+import os
+>>>>>>> dc250bb1f464f68b46541b65759b8a7cb834cf49
 import datetime 
 app =Flask(__name__)
 @app.route('/',methods=["POST","GET"])
@@ -56,6 +60,6 @@ def test():
 if __name__ == '__main__':
        
 
-       app.run()#debug='true')
+       app.run(host='0.0.0.0')#debug='true')
 
        
