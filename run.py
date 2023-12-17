@@ -1,10 +1,6 @@
 import requests
 from flask import Flask,request,render_template
-#import SECRETS
-import streamlit as st
 import os
-#import webbrowser
-# webbrowser.open('http://127.0.0.1:5000')
 import datetime 
 app =Flask(__name__)
 @app.route('/',methods=["POST","GET"])
@@ -45,6 +41,6 @@ def test():
 if __name__ == '__main__':
        
 
-       app.run()#debug='true')
+       app.run(host='0.0.0.0')#debug='true')
 
        
