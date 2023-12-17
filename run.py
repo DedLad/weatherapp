@@ -1,7 +1,8 @@
 import requests
 from flask import Flask,request,render_template
-import SECRETS
-import webbrowser
+#import SECRETS
+import os
+#import webbrowser
 # webbrowser.open('http://127.0.0.1:5000')
 import datetime 
 app =Flask(__name__)
@@ -9,7 +10,7 @@ app =Flask(__name__)
 def test():
     if request.method == "POST":
         code = request.form.get("code")
-        key= SECRETS.x
+        key= os.environ.get('API_URL')
         r = requests.get(f"https://api.openweathermap.org/data/2.5/weather?q={code}&appid={key}&units=metric")
         
         class vars:
